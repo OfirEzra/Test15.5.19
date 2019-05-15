@@ -1,0 +1,1 @@
+UPDATE Courses SET NUM_OF_STUDENTS = (SELECT COUNT(*) FROM Grades WHERE Grades.COURSE_ID = Courses.ID)

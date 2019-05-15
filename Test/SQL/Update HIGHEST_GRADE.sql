@@ -1,0 +1,1 @@
+UPDATE Courses SET HIGHEST_GRADE = (SELECT MAX(Grades.GRADE) FROM Grades WHERE Grades.COURSE_ID = Courses.ID)

@@ -1,0 +1,1 @@
+UPDATE Courses SET AVG_GRADE = (SELECT AVG(Grades.GRADE) FROM Grades WHERE Grades.COURSE_ID = Courses.ID)
